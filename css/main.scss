@@ -1,0 +1,53 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$max-thumbnail-height: 300px;
+
+body {
+  padding: 40px;
+  background: #f4f4f4;  
+}
+
+//  homepage
+.home {
+  padding: 20px;
+  div {
+    margin-bottom: 10px;
+    // Clip images to size.
+    max-height: $max-thumbnail-height;
+    overflow: hidden;
+    // Give border radius.
+    border-radius: 10px;
+    // Fix problems with overflow:hidden border radius on Chrome.
+    opacity: 0.99; // doesn't get every corner. why?
+    img {
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#nav-title {
+  font-size: 20px;
+}
+
+#nav-link {
+  font-size: 18px;
+  span {
+    margin-right: 5px;
+  }
+}
+
+
+//   a post
+.post-body {
+  margin-top: 25px;
+}
+.post-subimage {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+}

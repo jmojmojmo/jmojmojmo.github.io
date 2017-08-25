@@ -1,0 +1,18 @@
+<!-- layout for a post -->
+<!DOCTYPE html>
+<html>
+<title> {{ page.title }} </title>
+  {% include header.html %}
+  <body>
+    {% include nav.html %}
+    <div class="post-body">
+      <h4>
+        <a href="/" style="color:#666"> (don't like this page? click to go back)</a>
+      </h4>
+      {% for image in page.images %}
+        <img class="post-subimage" src="photos/{{ image }}"></img>
+      {% endfor %}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
