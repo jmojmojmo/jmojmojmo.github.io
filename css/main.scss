@@ -17,9 +17,12 @@ $home-margin-top: 100px;
   margin-top: $home-margin-top;
   padding: 0px;
   text-align: center;
-  > * {
-    display: inline;
+  div {
+    display: inline-block;
+  }
+  img {
     vertical-align: top;
+    display: inline;
   }
 }
 
@@ -27,6 +30,9 @@ $home-margin-top: 100px;
 $header-top-margin: 40px;
 $header-left-margin: 50px;
 $header-right-margin: 75px;
+
+$nav-active: #000;
+$nav-inactive: #aaa;
 
 #nav {
   width: 100%;
@@ -45,8 +51,12 @@ $header-right-margin: 75px;
 #nav-links {
   font-size: 18px;
   right: $header-right-margin;
-  span {
-    margin-right: 5px;
+  > span {
+    margin-right: 30px;
+    color: $nav-inactive;
+    &.active {
+      color: $nav-active;
+    }
   }
 }
 
@@ -91,21 +101,21 @@ $col-padding-vert: 45px;
   width: $col-width * 3 + $col-padding * 2;
 }
 .img-col-1 {
+  padding: $col-padding-vert $col-padding;
   img {    
     width: $col-width * 1;
-    padding: $col-padding-vert $col-padding;
   }
 }
 .img-col-2 {
+  padding: $col-padding-vert $col-padding;
   img {  
     width: $col-width * 2 + $col-padding * 1;
-    padding: $col-padding-vert $col-padding;
   }
 }
 .img-col-3 {
+  padding: $col-padding-vert $col-padding;
   img {  
     width: $col-width * 3 + $col-padding * 2;
-    padding: $col-padding-vert $col-padding;
   }
 } 
 
