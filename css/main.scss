@@ -13,7 +13,7 @@ body {
 .home {
   padding: 20px;
   text-align: center;
-  * {
+  > * {
     display: inline;
     vertical-align: top;
   }
@@ -31,27 +31,58 @@ body {
 }
 
 // homepage items
-$single-col-width: 350px;
-$single-col-padding: 80px;
 
-.big-col-1 {
-  width: $single-col-width * 1;
+//     'big'     [breakpoint1]    'medium'    [breakpoint2]    'small'
+
+$break-point-1: 1200px;
+$break-point-2: 900px;
+
+$col-width: 350px;
+$col-padding: 40px;
+$col-padding-vert: 45px;
+
+@media screen and (min-width: $break-point-1) {
+  max-width: $col-width * 3 + ($col-padding * 2) * 2;
 }
-.big-col-2 {
-  width: $single-col-width * 2 + $single-col-padding * 1;
+
+
+// 'medium'
+@media screen and (max-width: $break-point-1) {
+  .home {
+    // two columns
+    max-width: $col-width * 2 + $col-padding * 2;
+  } 
 }
-.big-col-3 {
-  width: $single-col-width * 3 + $single-col-padding * 2;
+
+// 'big'
+
+.col-1 {
+  width: $col-width * 1;
 }
-.big-img-col-1 {
-  width: $single-col-width * 1;
+.col-2 {
+  width: $col-width * 2 + $col-padding * 1;
 }
-.big-img-col-2 {
-  width: $single-col-width * 2 + $single-col-padding * 1;
+.col-3 {
+  width: $col-width * 3 + $col-padding * 2;
 }
-.big-img-col-3 {
-  width: $single-col-width * 3 + $single-col-padding * 2;
+.img-col-1 {
+  img {    
+    width: $col-width * 1;
+    padding: $col-padding-vert $col-padding;
+  }
 }
+.img-col-2 {
+  img {  
+    width: $col-width * 2 + $col-padding * 1;
+    padding: $col-padding-vert $col-padding;
+  }
+}
+.img-col-3 {
+  img {  
+    width: $col-width * 3 + $col-padding * 2;
+    padding: $col-padding-vert $col-padding;
+  }
+} 
 
 //   a post
 .post-body {

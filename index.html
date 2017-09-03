@@ -2,7 +2,9 @@
 layout: main
 ---
 <div class="home row">
-  {% for image in site.posts %}
-      <img class="{{ image.classes }}" src="photos/{{ image.thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'"></img>
+  {% for image in site.posts reversed %}
+    <div class="{{ image.classes }}">
+      <img src="photos/{{ image.thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'"></img>
+    </div>
   {% endfor %}
 </div>
