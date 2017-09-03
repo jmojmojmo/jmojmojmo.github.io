@@ -1,17 +1,21 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+# We cannot remove these dashes (stupid, I know)
 ---
 
-$max-thumbnail-height: 300px;
+$background-color: #fff;
+$body-padding: 0px;
 
 body {
-  padding: 40px;
-  background: #f4f4f4;  
+  margin: 0;
+  padding: $body-padding;
+  background: $background-color;  
 }
 
 //  homepage
+$home-margin-top: 100px;
 .home {
-  padding: 20px;
+  margin-top: $home-margin-top;
+  padding: 0px;
   text-align: center;
   > * {
     display: inline;
@@ -19,15 +23,36 @@ body {
   }
 }
 
-#nav-title {
-  font-size: 20px;
+// nav
+$header-top-margin: 40px;
+$header-left-margin: 50px;
+$header-right-margin: 75px;
+
+#nav {
+  width: 100%;
+  text-transform: uppercase;
+  > div {
+    position: fixed;
+    top: $header-top-margin;
+  }
 }
 
-#nav-link {
+#nav-title {
+  font-size: 20px;
+  left: $header-left-margin;
+}
+
+#nav-links {
   font-size: 18px;
+  right: $header-right-margin;
   span {
     margin-right: 5px;
   }
+}
+
+// footer
+#footer {
+  text-align: center;
 }
 
 // homepage items
