@@ -12,21 +12,10 @@ body {
 //  homepage
 .home {
   padding: 20px;
-  div {
-    margin-bottom: 10px;
-    // Clip images to size.
-    max-height: $max-thumbnail-height;
-    overflow: hidden;
-    // Give border radius.
-    border-radius: 10px;
-    // Fix problems with overflow:hidden border radius on Chrome.
-    opacity: 0.99; // doesn't get every corner. why?
-    img {
-      &:hover {
-        opacity: 0.5;
-        cursor: pointer;
-      }
-    }
+  text-align: center;
+  * {
+    display: inline;
+    vertical-align: top;
   }
 }
 
@@ -41,6 +30,28 @@ body {
   }
 }
 
+// homepage items
+$single-col-width: 350px;
+$single-col-padding: 80px;
+
+.big-col-1 {
+  width: $single-col-width * 1;
+}
+.big-col-2 {
+  width: $single-col-width * 2 + $single-col-padding * 1;
+}
+.big-col-3 {
+  width: $single-col-width * 3 + $single-col-padding * 2;
+}
+.big-img-col-1 {
+  width: $single-col-width * 1;
+}
+.big-img-col-2 {
+  width: $single-col-width * 2 + $single-col-padding * 1;
+}
+.big-img-col-3 {
+  width: $single-col-width * 3 + $single-col-padding * 2;
+}
 
 //   a post
 .post-body {
