@@ -31,10 +31,12 @@ $home-margin-top: 100px;
   text-align: center;
   div {
     display: inline-block;
+    border: 1px solid blue; // temp!
   }
   img {
     vertical-align: top;
     display: inline;
+    border: 1px solid red; // temp!
   }
 }
 
@@ -43,8 +45,8 @@ $header-top-margin: 40px;
 $header-left-margin: 50px;
 $header-right-margin: 75px;
 
-$nav-active: #000;
-$nav-inactive: #999;
+$active: #000;
+$inactive: #999;
 
 #nav {
   width: 100%;
@@ -58,6 +60,10 @@ $nav-inactive: #999;
 #nav-title {
   font-size: 20px;
   left: $header-left-margin;
+  a {
+    color: $active;
+    text-decoration: none;
+  }
 }
 
 #nav-links {
@@ -65,15 +71,15 @@ $nav-inactive: #999;
   right: $header-right-margin;
   > span {
     margin-right: 30px;
-    color: $nav-inactive;
+    color: $inactive;
     &.active {
-      color: $nav-active;
+      color: $active;
       &:hover {
         cursor: default;
       }
     }
     &:hover {
-      color: $nav-active;
+      color: $active;
       cursor: pointer;
     }
   }
@@ -83,7 +89,8 @@ $nav-inactive: #999;
 #footer {
   font-weight: bold;
   letter-spacing: 1px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  margin-top: 125px;
   text-align: center;
   a {
     cursor: pointer; 
@@ -105,7 +112,7 @@ $col-padding-vert: 45px;
 @media screen and (min-width: $break-point-1) {
   .home {
     // three columns
-    max-width: $col-width * 3 + ($col-padding * 2) * 2;
+    width: $col-width * 3 + ($col-padding * 2) * 2;
   }
 }
 
@@ -114,7 +121,7 @@ $col-padding-vert: 45px;
 @media screen and (max-width: $break-point-1) {
   .home {
     // two columns
-    max-width: $col-width * 2 + $col-padding * 2;
+    width: $col-width * 2 + $col-padding * 2;
   } 
 }
 
@@ -149,10 +156,33 @@ $col-padding-vert: 45px;
 } 
 
 //   a post
-.post-body {
-  margin-top: 25px;
+$post-margin-top: 163px;
+
+.post {
+  margin-top: $post-margin-top;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  .main-image {
+    margin-top: 50px;
+    max-height: 350px;
+  }
+  .subimage {
+    margin-top: 90px;
+    max-height: 350px;
+    padding: 0;
+  }
 }
-.post-subimage {
-  max-height: 350px;
-  padding: 20px;
+
+#prevnext {
+  color: $inactive;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 90px;
+  a {
+    &:hover {
+      color: $active;
+      cursor: pointer;
+    }
+  }
 }
