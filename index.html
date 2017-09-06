@@ -1,7 +1,7 @@
 ---
 layout: main
 ---
-<div class="home row">
+<div class="home">
   {% for image in site.posts reversed %}
     <div class="col-{{ image.col-width }} img-col-{{ image.img-col-width }}">
       <img src="photos/{{ image.thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'" />

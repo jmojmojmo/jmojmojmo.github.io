@@ -25,6 +25,8 @@ body {
 $home-margin-top: 100px;
 .home {
   margin-top: $home-margin-top;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
   text-align: center;
   div {
@@ -66,6 +68,9 @@ $nav-inactive: #999;
     color: $nav-inactive;
     &.active {
       color: $nav-active;
+      &:hover {
+        cursor: default;
+      }
     }
     &:hover {
       color: $nav-active;
@@ -76,12 +81,19 @@ $nav-inactive: #999;
 
 // footer
 #footer {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
   text-align: center;
+  a {
+    cursor: pointer; 
+    text-decoration: underline;
+  }
 }
 
 // homepage items
 
-//     'big'     [breakpoint1]    'medium'    [breakpoint2]    'small'
+//     'big'  |   [breakpoint1]  |  'medium'  |  [breakpoint2]  |  'small'
 
 $break-point-1: 1200px;
 $break-point-2: 900px;
@@ -92,9 +104,8 @@ $col-padding-vert: 45px;
 
 @media screen and (min-width: $break-point-1) {
   .home {
+    // three columns
     max-width: $col-width * 3 + ($col-padding * 2) * 2;
-    margin-right: -$col-padding; 
-    margin-left: -$col-padding;
   }
 }
 
@@ -104,7 +115,6 @@ $col-padding-vert: 45px;
   .home {
     // two columns
     max-width: $col-width * 2 + $col-padding * 2;
-    margin: 0 -$col-padding;
   } 
 }
 
