@@ -109,32 +109,51 @@ $col-width: 350px;
 $col-padding: 40px;
 $col-padding-vert: 45px;
 
+
+// > [breakpoint1] (big)
 @media screen and (min-width: $break-point-1) {
   .home {
     // three columns
-    width: $col-width * 3 + ($col-padding * 2) * 2;
+    width: $col-width * 3 + ($col-padding * 3) * 2;
   }
-}
 
-
-// 'medium'
-@media screen and (max-width: $break-point-1) {
-  .home {
-    // two columns
-    width: $col-width * 2 + $col-padding * 2;
+  .col-3 {
+    width: $col-width * 3 + $col-padding * 2;
+  }
+  .img-col-3 {
+    padding: $col-padding-vert $col-padding;
+    img {  
+      width: $col-width * 3 + $col-padding * 2;
+    }
   } 
 }
 
-// 'big'
+
+// > [breakpoint2] (medium)
+@media screen and (min-width: $break-point-2) {
+  .home {
+    // two columns
+    width: $col-width * 2 + ($col-padding * 2) * 2;
+  } 
+
+  .col-3 {
+    width: $col-width * 2 + $col-padding * 1;
+  }
+  .img-col-3 {
+    padding: $col-padding-vert $col-padding;
+    img {  
+      width: $col-width * 2 + $col-padding * 1;
+    }
+  }
+}
+
+// (small)
 
 .col-1 {
   width: $col-width * 1;
 }
 .col-2 {
   width: $col-width * 2 + $col-padding * 1;
-}
-.col-3 {
-  width: $col-width * 3 + $col-padding * 2;
 }
 .img-col-1 {
   padding: $col-padding-vert $col-padding;
@@ -146,12 +165,6 @@ $col-padding-vert: 45px;
   padding: $col-padding-vert $col-padding;
   img {  
     width: $col-width * 2 + $col-padding * 1;
-  }
-}
-.img-col-3 {
-  padding: $col-padding-vert $col-padding;
-  img {  
-    width: $col-width * 3 + $col-padding * 2;
   }
 } 
 
