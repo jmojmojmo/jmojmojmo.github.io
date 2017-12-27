@@ -30,12 +30,11 @@ $home-margin-top: 100px;
   padding: 0px;
   text-align: center;
   div {
-    display: inline-block;
+    display: inline;
     border: 1px solid blue; // temp!
   }
   img {
     vertical-align: top;
-    display: inline;
     border: 1px solid red; // temp!
   }
 }
@@ -114,16 +113,16 @@ $col-padding-vert: 45px;
 @media screen and (min-width: $break-point-1) {
   .home {
     // three columns
-    width: $col-width * 3 + ($col-padding * 3) * 2;
+    width: $col-width * 3 + ($col-padding * 2) * 3;
   }
 
   .col-3 {
     width: $col-width * 3 + $col-padding * 2;
   }
   .img-col-3 {
-    padding: $col-padding-vert $col-padding;
     img {  
-      width: $col-width * 3 + $col-padding * 2;
+      padding: $col-padding-vert $col-padding;
+      width: calc(100% - #{$col-padding * 2});
     }
   } 
 }
@@ -140,8 +139,8 @@ $col-padding-vert: 45px;
     width: $col-width * 2 + $col-padding * 1;
   }
   .img-col-3 {
-    padding: $col-padding-vert $col-padding;
     img {  
+      padding: $col-padding-vert $col-padding;
       width: $col-width * 2 + $col-padding * 1;
     }
   }
@@ -153,17 +152,17 @@ $col-padding-vert: 45px;
   width: $col-width * 1;
 }
 .col-2 {
-  width: $col-width * 2 + $col-padding * 1;
+  width: $col-width * 2 + ($col-padding * 2) * 1;
 }
 .img-col-1 {
-  padding: $col-padding-vert $col-padding;
   img {    
+    padding: $col-padding-vert $col-padding;
     width: $col-width * 1;
   }
 }
 .img-col-2 {
-  padding: $col-padding-vert $col-padding;
   img {  
+    padding: $col-padding-vert $col-padding;
     width: $col-width * 2 + $col-padding * 1;
   }
 } 
