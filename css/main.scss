@@ -31,11 +31,9 @@ $home-margin-top: 100px;
   text-align: center;
   div {
     display: inline;
-    border: 1px solid blue; // temp!
   }
   img {
     vertical-align: top;
-    border: 1px solid red; // temp!
   }
 }
 
@@ -108,31 +106,23 @@ $col-width: 350px;
 $col-padding: 40px;
 $col-padding-vert: 45px;
 
+$buffer-width: 10px;
+
 
 // > [breakpoint1] (big)
 @media screen and (min-width: $break-point-1) {
   .home {
     // three columns
-    width: $col-width * 3 + ($col-padding * 2) * 3;
+    width: $col-width * 3 + ($col-padding * 2) * 3 + $buffer-width;
   }
-
-  .col-3 {
-    width: $col-width * 3 + $col-padding * 2;
-  }
-  .img-col-3 {
-    img {  
-      padding: $col-padding-vert $col-padding;
-      width: calc(100% - #{$col-padding * 2});
-    }
-  } 
 }
 
 
 // > [breakpoint2] (medium)
-@media screen and (min-width: $break-point-2) {
+@media screen and (min-width: $break-point-2) and (max-width: $break-point-1) {
   .home {
     // two columns
-    width: $col-width * 2 + ($col-padding * 2) * 2;
+    width: $col-width * 2 + ($col-padding * 2) * 2 + $buffer-width;
   } 
 
   .col-3 {
