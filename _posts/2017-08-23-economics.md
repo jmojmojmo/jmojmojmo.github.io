@@ -5,4 +5,5 @@ images: economics.png
 thumbnail: economics.png
 col-width: 1
 img-col-width: 1
+order: 2
 ---
