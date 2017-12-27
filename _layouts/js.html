@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title> {{ page.title }} </title>
+  <!-- Header -->
+  {% include header.html %}
+  <body>
+    <!-- Nav -->
+    {% include nav.html %}
+    <div class="post">
+      <!-- Title -->
+      {% if page.header != null %}
+        <h3 class="title">{{ page.header}}</h3>
+      {% endif %}
+      <!-- Subtitle -->
+      {% if page.subtitle != null %}
+        <h3 class="subtitle">{{ page.subtitle }}</h3>
+      {% endif %}
+      <!-- Main JS -->
+      {{ page.content }}
+      <!-- Prev / Next -->
+      <div id="prevnext">
+        <a>prev</a> / <a>next</a>
+      </div>
+    </div>
+    <!-- Footer -->
+    {% include footer.html %}
+  </body>
+</html>

@@ -126,8 +126,9 @@ $buffer-width: 10px;
   } 
 
   .col-3 {
-    width: $col-width * 2 + $col-padding * 1;
+    width: $col-width * 2 + $col-padding * 2;
   }
+
   .img-col-3 {
     img {  
       padding: $col-padding-vert $col-padding;

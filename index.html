@@ -2,10 +2,17 @@
 layout: main
 ---
 <div class="home">
-{% assign posts_sorted = (site.posts | sort: 'order') %}
+{% assign posts_sorted = site.posts | sort: 'order' %}
 {% for image in posts_sorted %}
   <div class="col-{{ image.col-width }} img-col-{{ image.img-col-width }}">
-    <img src="photos/{{ image.thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'" />
+	  {% if image.type == null %}
+	    <img src="photos/{{ image.thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'" />
+	  {% endif %}
+	  {% if image.layout == 'js' %}
+	    <div>
+	    	{{ image.content }}
+	    </div>
+	  {% endif %}
   </div>
 {% endfor %}
 </div>
