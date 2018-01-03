@@ -9,9 +9,7 @@ layout: main
 	    <img src="photos/{{ image.thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'" />
 	  {% endif %}
 	  {% if image.layout == 'js' %}
-	    <div>
-	    	{{ image.content }}
-	    </div>
+        {{ image.content }}
 	  {% endif %}
   </div>
 {% endfor %}

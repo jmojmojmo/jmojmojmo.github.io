@@ -2,6 +2,9 @@
 # We cannot remove these dashes (stupid, I know)
 ---
 
+// make things big
+html, body { height: 100% }
+
 // fonts
 h1, h2, h3, h4, h5, h6, p, span, div {
   font-family: 'Domine', serif;

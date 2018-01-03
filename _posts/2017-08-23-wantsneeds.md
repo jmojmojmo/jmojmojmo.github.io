@@ -1,9 +1,8 @@
 ---
 layout: js
-header: wantsneeds
-col-width: 3
-img-col-width: 2
-order: 4
+col-width: 1
+img-col-width: 1
+order: 9
 ---
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 <script src="js/wantsneeds_Canvas.js"></script>
