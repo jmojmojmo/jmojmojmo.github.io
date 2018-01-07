@@ -54,7 +54,9 @@ $inactive: #999;
 
 #nav {
   width: 100%;
-  text-transform: uppercase;
+  a, span {
+    font-family: 'Varela Round';
+  }
   > div {
     position: fixed;
     top: $header-top-margin;
