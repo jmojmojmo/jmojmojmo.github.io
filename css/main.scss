@@ -175,12 +175,17 @@ $post-margin-top: 163px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  .main-image {
-    margin-top: 50px;
-    max-height: 350px;
+  .titlebox {
+    margin-bottom: 50px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .subtitle {
+    font-size: 18px;
   }
   .subimage {
-    margin-top: 90px;
     max-height: 350px;
     padding: 0;
   }
