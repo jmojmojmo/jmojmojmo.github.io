@@ -1,5 +1,7 @@
 ---
 layout: js
+head:
+subhead:
 col-width: 1
 img-col-width: 1
 order: 1
