@@ -1,9 +1,9 @@
 ---
 layout: post
-header: economics
+header: 
 images: economics.png
 thumbnail: economics.png
-col-width: 1
+col-width: 2
 img-col-width: 1
-order: 2
+order: 9
 ---
