@@ -1,6 +1,7 @@
 ---
 layout: post
-head: evolution
+head: 
+subhead:
 images: evolution.png
 thumbnail: evolution.png
 col-width: 3
