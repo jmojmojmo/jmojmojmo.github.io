@@ -2,7 +2,7 @@
 layout: js
 head:
 subhead:
-col-width: 1
+col-width: 3
 img-col-width: 1
 order: 1
 ---
