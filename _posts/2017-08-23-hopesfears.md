@@ -2,7 +2,7 @@
 layout: post
 images: hopesfears_800.gif
 thumbnail: hopesfears_800.gif
-col-width: 2
-img-col-width: 2
+col-width: 1
+img-col-width: 1
 order: 8
 ---
