@@ -1,6 +1,7 @@
 ---
 layout: post
 head: 
+subhead:
 images: economics.png
 thumbnail: economics.png
 col-width: 2
