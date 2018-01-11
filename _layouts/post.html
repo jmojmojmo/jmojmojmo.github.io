@@ -8,14 +8,14 @@
     {% include nav.html %}
     <div class="post">
       <!-- Title box -->
-      {% if page.title != null %}
+      {% if page.head != null %}
       <div class="titlebox">
         <!-- Title -->
-        {% if page.title != null %}
+        {% if page.head != null %}
           <p class="title">{{ page.head }}</p>
         {% endif %}
         <!-- Subtitle -->
-        {% if page.subtitle != null %}
+        {% if page.subhead != null %}
           <p class="subtitle">{{ page.subhead }}</p>
         {% endif %}
       </div>
