@@ -2,9 +2,9 @@
 layout: post
 head: 
 subhead:
-images: economics.png
-thumbnail: economics.png
+images: supplydemand_pp_1000_1.gif
+thumbnail: supplydemand_hp_350.gif
 col-width: 2
 img-col-width: 1
-order: 13
+order: 9
 ---
