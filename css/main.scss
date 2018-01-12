@@ -197,6 +197,8 @@ $post-margin-top: 163px;
   font-weight: bold;
   margin-top: 90px;
   a {
+    color: $inactive; // specificity increase
+    text-decoration: none;
     &:hover {
       color: $active;
       cursor: pointer;
