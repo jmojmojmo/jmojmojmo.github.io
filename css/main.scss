@@ -175,6 +175,9 @@ $post-margin-top: 163px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  .imagebox {
+    margin: 0px 50px;
+  }
   .titlebox {
     margin-bottom: 50px;
   }
@@ -187,6 +190,7 @@ $post-margin-top: 163px;
   }
   .subimage {
     max-width: 100%;
+    margin-bottom: 90px;
     padding: 0;
   }
 }
@@ -195,7 +199,6 @@ $post-margin-top: 163px;
   color: $inactive;
   font-size: 40px;
   font-weight: bold;
-  margin-top: 90px;
   a {
     color: $inactive; // specificity increase
     text-decoration: none;
