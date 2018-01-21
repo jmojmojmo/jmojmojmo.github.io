@@ -1,3 +1,17 @@
 <div id="footer" class="tag">
-  Copyright&nbsp;&nbsp;©&nbsp;&nbsp;2018&nbsp;&nbsp;John Michael Morris&nbsp;&nbsp;•&nbsp;&nbsp;<a>email</a>
+  Copyright&nbsp;&nbsp;©&nbsp;&nbsp;<span id="current-year"></span>&nbsp;&nbsp;John Michael Morris&nbsp;&nbsp;•&nbsp;&nbsp;<a id="john-email" href="mailto:morrisj68@gmail.com">email</a>
 </div>
+<style>
+	#current-year {
+		font-family: inherit;
+	}
+	#john-email {
+		color: inherit;
+	}
+</style>
+<script>
+	// Sets the copyright year to the current year so we don't have to constantly change it
+	// (or forget and look apathetic and stupid).
+	let currentYear = '' + new Date().getFullYear();
+	$('#current-year').text(currentYear);
+</script>
