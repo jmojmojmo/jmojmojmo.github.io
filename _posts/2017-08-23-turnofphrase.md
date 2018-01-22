@@ -7,7 +7,7 @@ order: 6
 <div style="width: 350px; height: 350px">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
-	<div id="phrase-container" onclick="let path='/tugofwar';if(!location.href.includes(path)){location.href=path;}">
+	<div id="phrase-container" onclick="let path='/turnofphrase';if(!location.href.includes(path)){location.href=path;}">
 		<div id="phrasebox" class="phrase"></div>
 		<div id="phrase-animate" class="phrase"></div>
 		<img src="other/turnofphrase/svg/of-1.svg" style="visibility:hidden" />
@@ -20,6 +20,7 @@ order: 6
 	    padding: 45px 40px;
 		position: relative;
 		display: inline-block;
+		background-color: #055470;
 	}
 	#phrasebox {
 		display: inline-block;
