@@ -2,9 +2,13 @@
 # specific stylings for index.html
 ---
 
+// turnofphrase
 #phrase-container-box {
 	display: inline-block;
 	padding: 45px 40px;
+	* {
+		cursor: pointer;
+	}
 }
 
 $phrase-img-total-width: 780px;
@@ -14,4 +18,13 @@ $phrase-img-padding: 40px;
 	height: $phrase-img-total-height - 2 * $phrase-img-padding;
 	width: $phrase-img-total-width - 2 * $phrase-img-padding;
 	padding: $phrase-img-padding;
+}
+
+
+
+// wants_needs_canvas
+#wantsneeds_canvas {
+	width: 350px;
+	height: 350px;
+	padding: 0px 40px;
 }

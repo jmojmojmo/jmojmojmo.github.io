@@ -54,8 +54,8 @@ function handleComplete() {
 			canvas.height = h*pRatio*sRatio;
 			// canvas.style.width = w*sRatio+'px';			
 			// canvas.style.height = h*sRatio+'px';
-			canvas.style.width = wantsNeedsCanvasSize+'px';			
-			canvas.style.height = wantsNeedsCanvasSize+'px';
+			// canvas.style.width = wantsNeedsCanvasSize+'px';			
+			// canvas.style.height = wantsNeedsCanvasSize+'px';
 			stage.scaleX = pRatio*sRatio;			
 			stage.scaleY = pRatio*sRatio;			
 			lastW = iw; lastH = ih; lastS = sRatio;		

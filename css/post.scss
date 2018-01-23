@@ -2,6 +2,17 @@
 # specific stylings for post pages
 ---
 
+// sticky footer specs
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.post {
+	flex: 1;
+}
+
+// phrase container specs
 #phrase-container-box {
 	margin-left: 50px;
 	margin-right: 50px;
@@ -12,4 +23,13 @@
 			width: 100%;
 		}
 	}
+}
+
+
+
+// wants_needs_canvas specs
+#wantsneeds_canvas {
+	width: 800px;
+	height: 800px;
+	padding: 0px 40px;
 }
