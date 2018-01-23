@@ -89,6 +89,16 @@ $inactive: #999;
       cursor: pointer;
     }
   }
+  > a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+// about page
+.infobox {
+  margin: 260px auto 0 auto;
+  width: 800px;
 }
 
 // footer
@@ -163,7 +173,7 @@ $buffer-width: 10px;
 .img-col-2 {
   img {  
     padding: $col-padding-vert $col-padding;
-    width: $col-width * 2 + $col-padding * 1;
+    width: $col-width * 2 + $col-padding * 2;
   }
 } 
 
