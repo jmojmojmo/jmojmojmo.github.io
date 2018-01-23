@@ -1,4 +1,17 @@
 ---
+# specific stylings for index.html
 ---
-// specific stylings for index.html
 
+#phrase-container-box {
+	display: inline-block;
+	padding: 45px 40px;
+}
+
+$phrase-img-total-width: 780px;
+$phrase-img-total-height: 350px;
+$phrase-img-padding: 40px;
+#phrase-container-box img {
+	height: $phrase-img-total-height - 2 * $phrase-img-padding;
+	width: $phrase-img-total-width - 2 * $phrase-img-padding;
+	padding: $phrase-img-padding;
+}
