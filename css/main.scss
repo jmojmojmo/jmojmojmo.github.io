@@ -125,7 +125,7 @@ $col-width: 350px;
 $col-padding: 40px;
 $col-padding-vert: 45px;
 
-$buffer-width: 10px;
+$buffer-width: 60px;
 
 
 // > [breakpoint1] (big)
@@ -142,40 +142,32 @@ $buffer-width: 10px;
   .home {
     // two columns
     width: $col-width * 2 + ($col-padding * 2) * 2 + $buffer-width;
-  } 
-
-  .col-3 {
-    width: $col-width * 2 + $col-padding * 2;
-  }
-
-  .img-col-3 {
-    img {  
-      padding: $col-padding-vert $col-padding;
-      width: $col-width * 2 + $col-padding * 1;
-    }
   }
 }
 
 // (small)
-
 .col-1 {
   width: $col-width * 1;
-}
-.col-2 {
-  width: $col-width * 2 + ($col-padding * 2) * 1;
-}
-.img-col-1 {
   img {    
     padding: $col-padding-vert $col-padding;
     width: $col-width * 1;
   }
 }
-.img-col-2 {
+.col-2 {
+  width: $col-width * 2 + ($col-padding * 2) * 1;
   img {  
     padding: $col-padding-vert $col-padding;
     width: $col-width * 2 + $col-padding * 2;
   }
-} 
+}
+
+// pushes images off of the left/right sides
+.push-left {
+  margin-left: $col-width/2;
+}
+.push-right {
+  margin-right: $col-width/2;
+}
 
 //   a post
 $post-margin-top: 163px;

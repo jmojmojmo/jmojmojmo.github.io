@@ -2,8 +2,7 @@
 layout: js
 head:
 subhead:
-col-width: 3
-img-col-width: 1
+col: 1
 order: 1
 ---
 <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>

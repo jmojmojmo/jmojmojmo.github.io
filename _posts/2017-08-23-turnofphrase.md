@@ -1,8 +1,8 @@
 ---
 layout: js
-col-width: 3
-img-col-width: 2
+col: 2
 order: 6
+classes: push-right
 ---
 <div id="phrase-container-box">
 	<div id="phrase-container" onclick="let path='/turnofphrase';if(!location.href.includes(path)){location.href=path;}">
