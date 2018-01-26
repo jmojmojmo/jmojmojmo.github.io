@@ -55,7 +55,7 @@ $inactive: #999;
 #nav {
   width: 100%;
   a, span {
-    font-family: 'Varela Round';
+    @extend .tag; // inherit font from .tag
   }
   > div {
     position: fixed;
@@ -134,6 +134,13 @@ $buffer-width: 60px;
     // three columns
     width: $col-width * 3 + ($col-padding * 2) * 3 + $buffer-width;
   }
+  // pushes images off of the left/right sides
+  .push-left {
+    margin-left: $col-width/2;
+  }
+  .push-right {
+    margin-right: $col-width/2;
+  }
 }
 
 
@@ -159,14 +166,6 @@ $buffer-width: 60px;
     padding: $col-padding-vert $col-padding;
     width: $col-width * 2 + $col-padding * 2;
   }
-}
-
-// pushes images off of the left/right sides
-.push-left {
-  margin-left: $col-width/2;
-}
-.push-right {
-  margin-right: $col-width/2;
 }
 
 //   a post
