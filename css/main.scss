@@ -64,7 +64,7 @@ $inactive: #999;
 }
 
 .nav-title {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   left: $header-left-margin;
   a {
@@ -101,6 +101,7 @@ $inactive: #999;
 
 // footer
 #footer {
+  font-weight: lighter;
   letter-spacing: 1px;
   margin-bottom: 20px;
   margin-top: 125px;
