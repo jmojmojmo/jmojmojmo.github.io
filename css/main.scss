@@ -63,7 +63,7 @@ $inactive: #999;
   }
 }
 
-#nav-title {
+.nav-title {
   font-size: 20px;
   left: $header-left-margin;
   a {
@@ -72,10 +72,11 @@ $inactive: #999;
   }
 }
 
-#nav-links {
+.nav-links {
   font-size: 18px;
   right: $header-right-margin;
-  > span {
+  > a {
+    text-decoration: none;
     margin-right: 30px;
     color: $inactive;
     &.active {
@@ -88,10 +89,6 @@ $inactive: #999;
       color: $active;
       cursor: pointer;
     }
-  }
-  > a {
-    text-decoration: none;
-    color: inherit;
   }
 }
 
