@@ -1,5 +1,7 @@
 ---
 layout: js
+head: Turn of Phrase
+subhead: Visual tone poem and meditative exploration of interlinked idioms.
 col: 2
 order: 6
 classes: push-right
