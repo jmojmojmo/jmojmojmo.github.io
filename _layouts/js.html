@@ -7,13 +7,18 @@
     <!-- Nav -->
     {% include nav.html %}
     <div class="post">
-      <!-- Title -->
+      <!-- Title box -->
       {% if page.head != null %}
-        <h3 class="title">{{ page.head }}</h3>
-      {% endif %}
-      <!-- Subtitle -->
-      {% if page.subhead != null %}
-        <h3 class="subtitle">{{ page.subhead }}</h3>
+      <div class="titlebox">
+        <!-- Title -->
+        {% if page.head != null %}
+          <p class="title">{{ page.head }}</p>
+        {% endif %}
+        <!-- Subtitle -->
+        {% if page.subhead != null %}
+          <p class="subtitle">{{ page.subhead }}</p>
+        {% endif %}
+      </div>
       {% endif %}
       <!-- Main JS -->
       {{ page.content }}
