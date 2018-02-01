@@ -97,6 +97,9 @@ $inactive: #999;
 .infobox {
   margin: 260px auto 0 200px;
   max-width: 800px;
+  * {
+    font-family: inherit;
+  }
 }
 
 // footer
