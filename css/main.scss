@@ -65,7 +65,7 @@ $inactive: #999;
 
 .nav-title {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 900;
   left: $header-left-margin;
   a {
     color: $active;
@@ -75,6 +75,7 @@ $inactive: #999;
 
 .nav-links {
   font-size: 18px;
+  font-weight: bold;
   right: $header-right-margin;
   > a {
     text-decoration: none;
