@@ -14,4 +14,17 @@ layout: main
   </div>
 {% endfor %}
 </div>
+<div class="home-mobile">
+{% assign posts_sorted = site.posts | sort: 'order' %}
+{% for image in posts_sorted %}
+  <div>
+	  {% if image.layout == 'post' and image.m-thumbnail != null %}
+	    <img src="imgs-mobile/{{ image.m-thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'" />
+	  {% endif %}
+	  {% if image.layout == 'js' %}
+        <!-- {{ image.content }} -->
+	  {% endif %}
+  </div>
+{% endfor %}
+</div>
 <link rel="stylesheet" href="/css/home.css">

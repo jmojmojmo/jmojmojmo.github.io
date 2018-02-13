@@ -1,0 +1,31 @@
+---
+---
+
+$breakpoint-phone: 400px;
+$breakpoint-tablet: 768px;
+
+
+.home-mobile {
+	display: none;
+}
+
+/* Tablet & Phone SCSS */
+@media (max-width: $breakpoint-tablet) {
+  .home {
+  	display: none;
+  }
+  .home-mobile {
+  	display: inherit;
+  }
+}
+
+
+/* Tablet SCSS */
+@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
+	
+}
+
+/* Phone SCSS */
+@media (max-width: $breakpoint-phone) {
+	
+}
