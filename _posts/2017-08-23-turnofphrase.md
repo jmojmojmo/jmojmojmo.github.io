@@ -1,7 +1,7 @@
 ---
 layout: js
 head: Turn of Phrase
-subhead: Visual tone poem and meditative study of interlinked idioms.
+subhead: Animated tone poem and meditative study of interlinked idioms. <br><br>2017  -  digital installation
 col: 2
 order: 6
 classes: push-right
