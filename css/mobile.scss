@@ -1,31 +1,39 @@
 ---
 ---
 
-$breakpoint-phone: 400px;
-$breakpoint-tablet: 768px;
+$breakpoint-phone: 768px;
+$posts-top-margin: 50px;
 
-
-.home-mobile {
+.home-mobile, .nav-mobile {
 	display: none;
 }
 
 /* Tablet & Phone SCSS */
-@media (max-width: $breakpoint-tablet) {
-  .home {
+@media (max-width: $breakpoint-phone) {
+  body {
+  	display: flex;
+  	flex-direction: column;
+  }
+  .home, #nav {
   	display: none;
   }
-  .home-mobile {
-  	display: inherit;
+  .home-mobile, .nav-mobile {
+  	display: inline;
   }
-}
-
-
-/* Tablet SCSS */
-@media (max-width: $breakpoint-tablet) and (min-width: $breakpoint-phone) {
-	
-}
-
-/* Phone SCSS */
-@media (max-width: $breakpoint-phone) {
-	
+  .home-mobile {
+  	text-align: center;
+	flex: 1; // sticky footer
+  	> .posts {
+  		margin-top: $posts-top-margin;
+  	}
+  }
+  .img-container {
+	display: inline;
+	margin: auto;
+	text-align: center;
+    > img { 
+	  width: 40%;
+	  padding: 4.5%;
+    }
+  }
 }

@@ -15,16 +15,19 @@ layout: main
 {% endfor %}
 </div>
 <div class="home-mobile">
-{% assign posts_sorted = site.posts | sort: 'order' %}
-{% for image in posts_sorted %}
-  <div>
+  <h1>John Morris</h1>
+  {% assign posts_sorted = site.posts | sort: 'order' %}
+  <div class="posts">
+  {% for image in posts_sorted %}
+	<div class="img-container">
 	  {% if image.layout == 'post' and image.m-thumbnail != null %}
 	    <img src="imgs-mobile/{{ image.m-thumbnail }}" onclick="location.href='{{ image.url | prepend: site.baseurl }}'" />
 	  {% endif %}
 	  {% if image.layout == 'js' %}
-        <!-- {{ image.content }} -->
+	    <!-- {{ image.content }} -->
 	  {% endif %}
+	</div>
+  {% endfor %}
   </div>
-{% endfor %}
 </div>
 <link rel="stylesheet" href="/css/home.css">
