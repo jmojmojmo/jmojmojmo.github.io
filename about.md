@@ -1,9 +1,9 @@
 ---
 layout: infopage
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate eget eros vel maximus. Maecenas elementum egestas massa, non convallis quam faucibus sed. Morbi ac ante quis orci ullamcorper ornare sit amet id dui. Nunc vel imperdiet arcu. Vivamus at neque vitae ligula rutrum blandit. Proin ut dignissim nibh, id facilisis nulla. 
+John Morris is a graphic artist, designer and illustrator based in New York City. His work is propelled by an interest in the both the possibilities and limitations of language. He is focused on creating intelligent and distinctive visual communications ranging from current topics to (the visualization of complex concepts and world of ideas.) 
 
-Integer volutpat urna sit amet fringilla lobortis. Nam at tellus massa. Cras pulvinar lorem magna. Duis ut augue at massa convallis maximus. Maecenas sit amet sem malesuada, tincidunt ante nec, vulputate arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus mollis lacus sit amet augue pharetra, eget pulvinar arcu lacinia. 
+He is a graduate of Parsons School of Design, and has over 20 years of multi-disciplinary design experience (click to view UX design samples PDF) for clients ranging from early-stage technology startups to large-scale financial systems. 
 
 <style>
 	#about-link {
