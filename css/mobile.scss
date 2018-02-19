@@ -16,10 +16,12 @@ $mobile-icon-inactive: #ccc;
 
 /* Tablet & Phone SCSS */
 @media only screen and (max-device-width: $breakpoint-phone) {
+
   body {
   	display: flex;
   	flex-direction: column;
   }
+  // Homepage
   .home, #nav {
   	display: none;
   }
@@ -41,7 +43,7 @@ $mobile-icon-inactive: #ccc;
   	> a {
   		padding: $mobile-nav-icon-padding;
   		> svg {
-  			fill: $mobile-icon-inactive;  				
+  			fill: $mobile-icon-active;  				
   		}
   	}
   }
@@ -53,5 +55,22 @@ $mobile-icon-inactive: #ccc;
 	  width: 40%;
 	  padding: 4.5%;
     }
+  }
+
+  // Project Page
+  .post {
+  	margin-top: 0;
+  	.titlebox {
+  		margin: 100px 0;
+  	}
+  	.title {
+  		font-size: 3em;
+  	}
+  	.subimage {
+  		margin-bottom: 50px;
+  	}
+  }
+  #footer {
+  	margin-top: 0;
   }
 }
