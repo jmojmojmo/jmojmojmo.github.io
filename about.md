@@ -5,7 +5,7 @@ John Morris is a New York-based graphic artist, illustrator, and designer. His w
 
 He is a graduate of Parsons School of Design, and has over 20 years of multi-disciplinary design experience (view UX design samples PDF) for clients ranging from early-stage technology startups to large-scale financial systems. 
 
-Contact: morrisj68@gmail.com
+Contact: <mailto:morrisj68@gmail.com>
 <style>
 	#about-link {
 		color: #000;
