@@ -4,6 +4,8 @@
 $breakpoint-phone: 480px;
 $posts-top-margin: 50px;
 
+$nav-svg-size: 40px;
+
 $mobile-nav-icon-padding: 20px;
 $mobile-name-header-font-size: 50px;
 
@@ -40,10 +42,13 @@ $mobile-icon-inactive: #ccc;
   	}
   }
   #nav-mobile {
+  	padding: 20px;
   	> a {
   		padding: $mobile-nav-icon-padding;
   		> svg {
-  			fill: $mobile-icon-active;  				
+  			fill: $mobile-icon-active;  
+  			width: $nav-svg-size;
+  			height: $nav-svg-size;				
   		}
   	}
   }
