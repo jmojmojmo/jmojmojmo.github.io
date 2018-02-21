@@ -45,6 +45,11 @@ $mobile-icon-inactive: #ccc;
   	padding: 20px;
   	> a {
   		padding: $mobile-nav-icon-padding;
+  		&.link-disabled {
+  			> svg {
+  				fill: $mobile-icon-inactive;
+  			}
+  		}
   		> svg {
   			fill: $mobile-icon-active;  
   			width: $nav-svg-size;
@@ -66,10 +71,13 @@ $mobile-icon-inactive: #ccc;
   .post {
   	margin-top: 0;
   	.titlebox {
-  		margin: 100px 0;
+  		margin-top: 100px;
   	}
   	.title {
   		font-size: 3em;
+  	}
+  	.imagebox {
+  		margin-top: 100px;
   	}
   	.subimage {
   		margin-bottom: 50px;
@@ -80,7 +88,7 @@ $mobile-icon-inactive: #ccc;
   #prevnext { 
   	display: none;
   }
-  
+
   #footer {
   	margin-top: 0;
   }
