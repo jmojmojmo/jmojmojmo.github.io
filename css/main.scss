@@ -121,6 +121,14 @@ $inactive: #999;
   }
 }
 
+// a default class for links
+.link-default {
+  color: $inactive;
+  &:hover {
+    color: $active;
+  }
+}
+
 // homepage items
 
 //     'big'  |   [breakpoint1]  |  'medium'  |  [breakpoint2]  |  'small'
