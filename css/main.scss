@@ -34,6 +34,9 @@ $home-margin-top: 100px;
   text-align: center;
   div {
     display: inline;
+    &:hover {
+      opacity: 0.5;
+    }
   }
   img {
     vertical-align: top;
