@@ -2,6 +2,9 @@
 # We cannot remove these dashes (stupid, I know)
 ---
 
+// remove default margins
+body { margin: 0; }
+
 // make things big
 html, body { height: 100% }
 
