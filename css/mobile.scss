@@ -5,7 +5,7 @@ $breakpoint-phone: 480px;
 $posts-top-margin: 50px;
 
 $nav-svg-size: 40px;
-$nav-mob-height: 124px;
+$nav-mob-height: 84px;
 
 $mobile-nav-icon-padding: 20px;
 $mobile-name-header-font-size: 50px;
@@ -48,6 +48,11 @@ $mobile-icon-inactive: #ccc;
   	width: 100%;
   	> a {
   		padding: $mobile-nav-icon-padding;
+  		> img {
+  			// for sizing icons before svg path js loads
+  			width: $nav-svg-size;
+  			height: $nav-svg-size;
+  		}
   		&.link-disabled {
   			> svg {
   				fill: $mobile-icon-inactive;
