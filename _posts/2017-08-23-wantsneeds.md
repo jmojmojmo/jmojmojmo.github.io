@@ -2,6 +2,7 @@
 layout: js
 head:
 subhead:
+m-thumbnail: wantsneeds_mobile_hp_332.gif
 col: 1
 order: 1
 ---
