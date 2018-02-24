@@ -12,7 +12,7 @@
 			{% assign nextpost = site.posts | sort:"order" | next %}
 		{% endif %}
 	<!-- left arrow -->
-	<a href="{{prevpost.url}}" style="float: left">
+	<a id="left" href="{{prevpost.url}}" style="float: left">
 	  <img class="svg" src="/other/svg/arrow_left.svg"/>
 	</a>
 	<!-- grid -->
@@ -20,11 +20,11 @@
 	  <img class="svg" src="/other/svg/grid.svg"/>
 	</a>
 	<!-- right arrow -->
-	<a href="{{nextpost.url}}" style="float: left">
+	<a id="right" href="{{nextpost.url}}" style="float: left">
 	  <img class="svg" src="/other/svg/arrow_right.svg"/>
 	</a>
 	<!-- hamburger -->
-	<a style="float: right">
+	<a id="menu" style="float: right">
 	  <img class="svg" src="/other/svg/menu.svg"/>
 	</a>
 </div>

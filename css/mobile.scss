@@ -45,7 +45,15 @@ $mobile-icon-inactive: #ccc;
   }
   #nav-mobile {
   	position: fixed;
+    background: white;
+    padding-top: 20px;
   	width: 100%;
+    > #left, #grid, #right {
+      padding-left: 40px;
+    }
+    > #menu {
+      padding-right: 40px;
+    }
   	> a {
   		padding: $mobile-nav-icon-padding;
   		> img {
