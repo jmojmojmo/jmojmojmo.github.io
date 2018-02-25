@@ -2,7 +2,7 @@
 layout: js
 head: Turn of Phrase
 subhead: Animated tone poem and meditative study of interlinked idioms. <br><br>2017  -  digital installation
-m-thumbnail: turnofphrase_mobile_hp_332.gif
+m-thumbnail: turnofphrase_mobile_b_hp_332.gif
 col: 2
 order: 6
 classes: push-right
