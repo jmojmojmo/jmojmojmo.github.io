@@ -28,9 +28,34 @@
 	  <img class="svg" src="/other/svg/menu.svg"/>
 	</a>
 </div>
+<div id="nav-mobile-menu">
+  <a id="menu-x">
+    <img class="svg" src="/other/svg/menu-x.svg"/>
+  </a>
+  <div id="link-box">
+	<a href="/">
+	  Work
+	</a>
+	<br> <br>
+	<a href="/about">
+	  About
+	</a>
+  </div>
+</div>
 
 
 <script>
+	/*
+	 * Show and hide menu when hamburger/x pressed
+	 */
+	 $('#menu').click(function() {
+	 	// show menu
+	 	$('#nav-mobile-menu').css('display', 'inline');
+	 });
+	 $('#menu-x').click(function() {
+	 	// hide menu
+	 	$('#nav-mobile-menu').css('display', 'none');
+	 });
 	/*
 	 * Replace all SVG images with inline SVG
 	 * 
