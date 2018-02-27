@@ -7,7 +7,12 @@ He holds a marketing MBA and is a graduate of Parsons School of Design, and has 
 
 
 <b>Contact: <a class="link-default" href="mailto:morrisj68@gmail.com">morrisj68@gmail.com</a><b>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+    
 
 <style>
 	/* This CSS makes the 'About' menu link appear black - only on the About page */
