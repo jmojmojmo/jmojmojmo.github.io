@@ -11,6 +11,9 @@
 		{% if nextpost.url == null %}
 			{% assign nextpost = site.posts | sort:"order" | next %}
 		{% endif %}
+		{% if nextpost.url == null %}
+			{% assign nextpost = site.posts | sort:"order" | first %}
+		{% endif %}
 	<!-- left arrow -->
 	<a id="left" href="{{prevpost.url}}" style="float: left">
 	  <img class="svg" src="/other/svg/arrow_left.svg"/>
