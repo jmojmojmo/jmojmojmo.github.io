@@ -103,8 +103,14 @@ $mobile-icon-inactive: #ccc;
       left: 50%;
       top: 50%;
       a {
+        font-family: 'Nunito Sans', sans-serif;
         font-size: 150px;
         text-decoration: none;
+        color: black;
+        &:visited {
+          // don't turn visited links purple!
+          color: inherit;
+        }
       }
     }
   }
