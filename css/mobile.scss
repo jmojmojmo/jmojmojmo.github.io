@@ -98,12 +98,12 @@ $mobile-icon-inactive: #ccc;
       top: 40px;
       > img {
         // for sizing icons before svg path js loads
-        width: $nav-svg-size;
-        height: $nav-svg-size; 
+        width: 50px;
+        height: 50px; 
       }
       > svg {
-        width: $nav-svg-size;
-        height: $nav-svg-size;
+        width: 50px;
+        height: 50px;
         fill: $mobile-icon-active;        
       }
     }
