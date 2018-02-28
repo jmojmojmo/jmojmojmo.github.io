@@ -155,8 +155,9 @@ $mobile-icon-inactive: #ccc;
 
   // change about page font sizes on mobile
   .infobox {
-    margin: 260px auto 0 50px;
-    line-height: 38px;
+    margin: 260px auto 0 60px;
+	  font-size: 46px;
+    line-height: 66px;
   }
 
   // hide prev& next on project Page
