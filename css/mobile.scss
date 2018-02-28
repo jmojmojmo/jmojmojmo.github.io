@@ -57,12 +57,12 @@ $mobile-icon-inactive: #ccc;
     > #menu {
       padding-right: 40px;
       > img {
-        width: 50px;
-        height: 50px;
+        width: $nav-svg-size + 10px;
+        height: $nav-svg-size + 10px;
       }
       > svg {
-        width: 50px;
-        height: 50px;
+        width: $nav-svg-size + 10px;
+        height: $nav-svg-size + 10px;
       }
     }
   	> a {
@@ -98,12 +98,12 @@ $mobile-icon-inactive: #ccc;
       top: 40px;
       > img {
         // for sizing icons before svg path js loads
-        width: 50px;
-        height: 50px; 
+        width: $nav-svg-size + 10px;
+        height: $nav-svg-size + 10px; 
       }
       > svg {
-        width: 50px;
-        height: 50px;
+        width: $nav-svg-size + 10px;
+        height: $nav-svg-size + 10px;
         fill: $mobile-icon-active;        
       }
     }
