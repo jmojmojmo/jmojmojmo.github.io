@@ -9,7 +9,6 @@
     {% include nav-mobile.html %}
     <div class="post">
       <!-- Title box -->
-      {% if page.head != null %}
       <div class="titlebox">
         <!-- Title -->
         {% if page.head != null %}
@@ -20,7 +19,6 @@
           <p class="subtitle">{{ page.subhead }}</p>
         {% endif %}
       </div>
-      {% endif %}
       <!-- Images -->
       <div class="imagebox">
         {% for image in page.images %}
