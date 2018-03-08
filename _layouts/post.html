@@ -28,21 +28,21 @@
       </div>
       <!-- Prev / Next -->
       <div id="prevnext">
-          {% assign prevorder = page.order | minus: 1 %}
-          {% assign prevposts = site.posts | where:"order", prevorder %}
-          {% assign prevpost = prevposts | first %}
-          {% assign nextorder = page.order | plus: 1 %}
-          {% assign nextposts = site.posts | where:"order", nextorder %}
-          {% assign nextpost = nextposts | first %}
-          {% if prevpost.url != null %}
-            <a href="{{prevpost.url}}">prev</a>
-          {% endif %}
-          {% if prevpost.url != null and nextpost.url != null %}
-            / 
-          {% endif %}
-          {% if nextpost.url != null %}
-            <a href="{{nextpost.url}}">next</a>
-          {% endif %}
+        {% assign prevorder = page.order | minus: 1 %}
+        {% assign prevposts = site.posts | where:"order", prevorder %}
+        {% assign prevpost = prevposts | first %}
+        {% assign nextorder = page.order | plus: 1 %}
+        {% assign nextposts = site.posts | where:"order", nextorder %}
+        {% assign nextpost = nextposts | first %}
+        {% if prevpost.url == null %}
+          {% assign prevpost = site.posts | sort:"order" | last %}
+        {% endif %}
+        {% if nextpost.url == null %}
+          {% assign nextpost = site.posts | sort:"order" | first %}
+        {% endif %}
+        <a href="{{prevpost.url}}">prev</a>
+          /
+        <a href="{{nextpost.url}}">next</a>
       </div>
     </div>
     <!-- Footer -->
