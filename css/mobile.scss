@@ -5,7 +5,7 @@ $breakpoint-phone: 480px;
 $posts-top-margin: 50px;
 
 $nav-svg-size: 40px;
-$nav-mob-height: 84px;
+$nav-mob-height: 134px;
 
 $mobile-nav-icon-padding: 20px;
 $mobile-name-header-font-size: 50px;
@@ -34,14 +34,18 @@ $mobile-icon-inactive: #ccc;
   .home-mobile {
   	margin-top: $nav-mob-height;
   	text-align: center;
-	flex: 1; // sticky footer
-	> #name-header {
-		// "John Morris" header
-		font-size: $mobile-name-header-font-size;
-	}
+  	flex: 1; // sticky footer
   	> .posts {
   		margin-top: $posts-top-margin;
   	}
+  }
+
+  // main description on homepage (mobile)
+  #main-description {
+    font-size: 18px;
+    width: 90%;
+    margin: 30px 5%;
+    padding: 0;
   }
   #nav-mobile {
   	position: fixed;

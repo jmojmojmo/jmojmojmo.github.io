@@ -2,6 +2,7 @@
 layout: main
 ---
 <div class="home">
+{% include main_description.html %}
 {% assign posts_sorted = site.posts | sort: 'order' %}
 {% for image in posts_sorted %}
   <div class="col-{{ image.col }} {{ image.classes }}">
@@ -15,7 +16,7 @@ layout: main
 {% endfor %}
 </div>
 <div class="home-mobile">
-  <h1 class="tag" id="name-header">John Morris</h1>
+  {% include main_description.html %}
   {% assign posts_sorted = site.posts | sort: 'order' %}
   <div class="posts">
   {% for image in posts_sorted %}

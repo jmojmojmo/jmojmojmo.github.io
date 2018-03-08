@@ -100,6 +100,16 @@ $inactive: #999;
   }
 }
 
+// main description on homepage
+#main-description {    
+  display: block;
+  width: 80%;
+  font-size: 16px;
+  padding-top: 30px;
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+
 // about page
 .infobox {
   font-family: 'Nunito Sans', sans-serif;
