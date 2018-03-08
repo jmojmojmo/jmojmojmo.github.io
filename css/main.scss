@@ -152,8 +152,8 @@ $break-point-1: 1200px;
 $break-point-2: 900px;
 
 $col-width: 350px;
-$col-padding: 40px;
-$col-padding-vert: 45px;
+$col-margin: 40px;
+$col-margin-vert: 45px;
 
 $buffer-width: 60px;
 
@@ -162,7 +162,7 @@ $buffer-width: 60px;
 @media screen and (min-width: $break-point-1) {
   .home {
     // three columns
-    width: $col-width * 3 + ($col-padding * 2) * 3 + $buffer-width;
+    width: $col-width * 3 + ($col-margin * 2) * 3 + $buffer-width;
   }
   // pushes images off of the left/right sides
   .push-left {
@@ -178,7 +178,7 @@ $buffer-width: 60px;
 @media screen and (min-width: $break-point-2) and (max-width: $break-point-1) {
   .home {
     // two columns
-    width: $col-width * 2 + ($col-padding * 2) * 2 + $buffer-width;
+    width: $col-width * 2 + ($col-margin * 2) * 2 + $buffer-width;
   }
 }
 
@@ -186,15 +186,15 @@ $buffer-width: 60px;
 .col-1 {
   width: $col-width * 1;
   img {    
-    padding: $col-padding-vert $col-padding;
+    margin: $col-margin-vert $col-margin;
     width: $col-width * 1;
   }
 }
 .col-2 {
-  width: $col-width * 2 + ($col-padding * 2) * 1;
+  width: $col-width * 2 + ($col-margin * 2) * 1;
   img {  
-    padding: $col-padding-vert $col-padding;
-    width: $col-width * 2 + $col-padding * 2;
+    margin: $col-margin-vert $col-margin;
+    width: $col-width * 2 + $col-margin * 2;
   }
 }
 
