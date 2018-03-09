@@ -5,7 +5,7 @@
 // turnofphrase
 #phrase-container-box {
 	display: inline-block;
-	padding: 45px 40px;
+	margin: 45px 40px;
 	* {
 		cursor: pointer;
 	}
@@ -13,11 +13,11 @@
 
 $phrase-img-total-width: 780px;
 $phrase-img-total-height: 350px;
-$phrase-img-padding: 40px;
+$phrase-img-margin: 40px;
 #phrase-container-box img {
-	height: $phrase-img-total-height - 2 * $phrase-img-padding;
-	width: $phrase-img-total-width - 2 * $phrase-img-padding;
-	padding: $phrase-img-padding;
+	height: $phrase-img-total-height - 2 * $phrase-img-margin;
+	width: $phrase-img-total-width - 2 * $phrase-img-margin;
+	margin: $phrase-img-margin;
 }
 
 
@@ -26,5 +26,5 @@ $phrase-img-padding: 40px;
 #wantsneeds_canvas {
 	width: 350px;
 	height: 350px;
-	padding: 0px 40px;
+	margin: 0px 40px;
 }
