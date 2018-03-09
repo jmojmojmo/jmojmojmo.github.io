@@ -1,5 +1,6 @@
 ---
 layout: infopage
+title: John Morris
 ---
 John Morris is a New York-based graphic artist, illustrator, and designer. His illustration work is grounded in ideas and is propelled by an interest in both the possibilities and limitations of language. He is focused on creating intelligent and distinctive visual communications ranging from current topics to the visualization of complex concepts.
 
