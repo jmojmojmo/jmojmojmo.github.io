@@ -8,8 +8,8 @@
     {% include nav.html %}
     {% include nav-mobile.html %}
     <div class="post">
+      {% if page.head != null or page.subhead != null %}
       <!-- Title box -->
-      {% if page.head != null %}
       <div class="titlebox">
         <!-- Title -->
         {% if page.head != null %}
