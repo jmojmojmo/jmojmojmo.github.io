@@ -17,15 +17,13 @@ var resizeTurnOfPhrase = function() {
 }
 
 
-$(document).ready(resizeTurnOfPhrase);
-
 window.addEventListener("resize", resizeTurnOfPhrase);
 
 // jack morris 03/27/19
 
 function initializeArrowIcons() {
-	// $('#arrow-left').hide();
-	// $('#arrow-right').hide();
+	$('#arrow-left').hide();
+	$('#arrow-right').hide();
 }
 
 /* add hover arrows on desktop */
@@ -65,4 +63,9 @@ function checkMouseCoords(event)  {
 }
 $(window).mousemove(checkMouseCoords);
 
-$(document).ready(initializeArrowIcons);
+function onReady() {
+	resizeTurnOfPhrase();
+	initializeArrowIcons();
+}
+
+$(document).ready(onReady);
