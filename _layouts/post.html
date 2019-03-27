@@ -42,9 +42,9 @@
         {% if nextpost.url == null %}
           {% assign nextpost = site.posts | sort:"order" | first %}
         {% endif %}
-        <a href="{{prevpost.url}}">prev</a>
-          /
-        <a href="{{nextpost.url}}">next</a>
+        {# side arrows #}
+        <a href="{{prevpost.url}}" id="arrow-left" class="arrow-button"><img class="svg"  src="css/arrow.svg"></a>
+        <a href="{{nextpost.url}}" id="arrow-right" class="arrow-button"><img class="svg" src="css/arrow.svg"></a>
       </div>
     </div>
     <!-- Footer -->

@@ -34,3 +34,22 @@ body {
 	height: 800px;
 	padding: 0px 40px;
 }
+
+// arrows
+$arrowsize: 35px;
+.arrow-button {
+    position: fixed;
+    top: 50%;
+    width: $arrowsize;
+    height: $arrowsize;
+    transform: translateY(-50%);
+}
+
+#arrow-right {
+    right: 10px;
+}
+
+#arrow-left {
+    left: 10px;
+    transform: translateY(-50%) scaleX(-1);
+}
