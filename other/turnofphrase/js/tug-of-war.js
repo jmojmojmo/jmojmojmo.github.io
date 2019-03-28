@@ -57,4 +57,4 @@ var resizeTurnOfPhrase = function() {
 }
 
 
-window.addEventListener("resize", resizeTurnOfPhrase);
+$('#phrase-container img').resize(resizeTurnOfPhrase);
