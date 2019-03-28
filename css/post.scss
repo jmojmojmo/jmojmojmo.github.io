@@ -36,20 +36,28 @@ body {
 }
 
 // arrows
+$arrowactive: #000;
+$arrowinactive: #999;
+
 $arrowsize: 35px;
+$arrowmargin: 35px;
 .arrow-button {
     position: fixed;
     top: 50%;
     width: $arrowsize;
     height: $arrowsize;
     transform: translateY(-50%);
+    fill: $arrowinactive;
+    &:hover {
+    	fill: $arrowactive;
+    }
 }
 
 #arrow-right {
-    right: 10px;
+    right: $arrowmargin;
 }
 
 #arrow-left {
-    left: 10px;
+    left: $arrowmargin;
     transform: translateY(-50%) scaleX(-1);
 }
