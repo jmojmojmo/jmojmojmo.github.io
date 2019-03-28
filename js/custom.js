@@ -104,7 +104,7 @@ $(window).mousemove(checkMouseCoords);
 function onReady() {
 	replaceSvgs();
 	initializeArrowIcons();
-	resizeTurnOfPhrase();
+	setTimeout(resizeTurnOfPhrase, 10);
 }
 
 $(document).ready(onReady);
