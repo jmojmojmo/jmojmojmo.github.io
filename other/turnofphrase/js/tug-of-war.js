@@ -7,6 +7,7 @@ $(document).ready(function(){
 
     setInterval(swapPhrase,4000);
     swapPhrase();
+    resizeTurnOfPhrase();
 
     function swapPhrase() {
         
@@ -36,3 +37,24 @@ $(document).ready(function(){
 
     }
 });
+
+
+/* ensure turn-of-phrase piece width-to-height ratio is constant */
+// jack morris 01/23/18
+
+let turnOfPhraseWidthToHeightRatio = 2.25;
+let turnOfPhrasePadding = 40; // px
+var resizeTurnOfPhrase = function() {
+    let innerImg = $('#phrase-container img');
+    if(!innerImg) {
+        return;
+    }
+    let innerWidth = innerImg.width();
+    let totalWidth = innerWidth + turnOfPhrasePadding * 2;
+    let totalHeight = totalWidth / turnOfPhraseWidthToHeightRatio;
+    let innerHeight = totalHeight - turnOfPhrasePadding * 2;
+    innerImg.height(innerHeight);
+}
+
+
+window.addEventListener("resize", resizeTurnOfPhrase);
