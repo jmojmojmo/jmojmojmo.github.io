@@ -1,10 +1,9 @@
 // jack morris 03/27/19
 
 function initializeArrowIcons() {
-	$('#arrow-left').hide();
-	$('#arrow-right').hide();
+	$('#arrow-left').css('opacity', '0');
+	$('#arrow-right').css('opacity', '0');
 }
-
 
 function replaceSvgs() {
 	$('img.svg').each(function(){
@@ -46,43 +45,59 @@ function replaceSvgs() {
 
 // show arrows when user moves mouse within this % of frame width
 var arrowShowPerc = 0.35; 
-var arrowAnimationDur = 200; // ms
+var arrowAnimationDur = 500; // ms
+var arrowMargin = 35; // px
 
 // the last x position of the cursor, tracked so we can tell which direction the cursor is moving
 var lastMouseX = $(window).width()/2; 
 
 function checkMouseCoords(event)  {
-
+  // return; 
   let mouseX = event.pageX;
-
   let w = $(window).width();
-
   // Show or hide left arrow.
   let inLeftTarget = mouseX < arrowShowPerc * w;
-  let movingLeft = true;//mouseX <= lastMouseX;
-  if(inLeftTarget && movingLeft) {
-  	$('#arrow-left').show();
-  } else {
-  	$('#arrow-left').hide();
+  if( $('#arrow-left').is(':animated') ) {
+  	// pass
+  } else if(inLeftTarget) { // show
+  	console.log('animate left')
+  	$('#arrow-left').animate({
+        opacity : 1,
+        left    : arrowMargin
+      });
+  } else { // hide
+  	$('#arrow-left').animate({
+        opacity : 0,
+        left    : arrowMargin + 15
+      });
   }
 
   // Show or hide right arrow.
   let inRightTarget = (mouseX > (1-arrowShowPerc) * w);
-  let movingRight = true;//mouseX >= lastMouseX;
-  if(inRightTarget && movingRight) {
-  	$('#arrow-right').show();
-  } else {
-  	$('#arrow-right').hide();
+  if( $('#arrow-right').is(':animated') ) {
+  	// pass
+  } else if(inRightTarget) { // show
+  	console.log('animate right');
+  	$('#arrow-right').animate({
+        opacity : 1,
+        right    : arrowMargin
+      });
+  } else { // hide
+  	$('#arrow-right').animate({
+        opacity : 0,
+        right    : arrowMargin + 15
+      });
   }
 
   lastMouseX = mouseX;
 
 }
-$(window).mousemove(checkMouseCoords);
 
 function onReady() {
 	replaceSvgs();
 	initializeArrowIcons();
+
+	$(window).mousemove(checkMouseCoords);
 }
 
 $(document).ready(onReady);

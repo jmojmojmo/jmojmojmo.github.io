@@ -21,12 +21,11 @@ body {
 		z-index: -1;
 		width: 100%; 
 		img {
+			padding-top: calc(44.4444% - 35px);
 			width: 100%;
 		}
 	}
 }
-
-
 
 // wants_needs_canvas specs
 #wantsneeds_canvas {
@@ -40,7 +39,7 @@ $arrowactive: #000;
 $arrowinactive: #999;
 
 $arrowsize: 35px;
-$arrowmargin: 35px;
+$arrowmargin: 50px;
 .arrow-button {
     position: fixed;
     top: 50%;
