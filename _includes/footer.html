@@ -1,4 +1,4 @@
-<div id="footer" class="tag">
+<div id="footer" class="tag" style="display: none">
   Copyright&nbsp;&nbsp;©&nbsp;&nbsp;<span id="current-year"></span>&nbsp;&nbsp;John Michael Morris&nbsp;&nbsp;•&nbsp;&nbsp;<a id="john-email" href="mailto:morrisj68@gmail.com">email</a>
 </div>
 <style>
@@ -14,4 +14,8 @@
 	// (or forget and look apathetic and stupid).
 	let currentYear = '' + new Date().getFullYear();
 	$('#current-year').text(currentYear);
+	// Show the footer only after images and such load, so it doesn't flash in there beforehand.
+	$(document).ready(() => {
+		$('#footer').show();
+	});
 </script>
