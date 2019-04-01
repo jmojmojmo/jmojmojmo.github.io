@@ -233,21 +233,3 @@ $post-margin-top: 150px;
     padding: 0;
   }
 }
-
-#prevnext {
-  color: $inactive;
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  a {
-    color: $inactive; // specificity increase
-    text-decoration: none;
-    &:hover {
-      color: $active;
-      cursor: pointer;
-    }
-  }
-}
-
-@import "mobile.css";
