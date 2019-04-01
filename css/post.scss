@@ -2,6 +2,9 @@
 # specific stylings for post pages
 ---
 
+$active: #000;
+$inactive: #999;
+
 // sticky footer specs
 body {
 	display: flex;
@@ -21,12 +24,11 @@ body {
 		z-index: -1;
 		width: 100%; 
 		img {
+			padding-top: calc(44.4444% - 35px);
 			width: 100%;
 		}
 	}
 }
-
-
 
 // wants_needs_canvas specs
 #wantsneeds_canvas {
@@ -34,3 +36,85 @@ body {
 	height: 800px;
 	padding: 0px 40px;
 }
+
+// left and right arrows
+
+$arrowactive: #000;
+$arrowinactive: #999;
+
+$arrowsize: 35px;
+$arrowmargin: 50px;
+$arrowhovermargin: 35px;
+$arrowactivemargin: 30px;
+
+$arrowdur: 300ms;
+.arrow-button {
+    position: fixed;
+    top: 50%;
+    width: $arrowsize;
+    height: $arrowsize;
+    transform: translateY(-50%);
+    fill: $arrowinactive;
+  	-webkit-transition: opacity $arrowdur ease-in-out, left $arrowdur ease-in-out, right $arrowdur ease-in-out;
+  	-moz-transition: opacity $arrowdur ease-in-out, left $arrowdur ease-in-out, right $arrowdur ease-in-out;
+  	transition: opacity $arrowdur ease-in-out, left $arrowdur ease-in-out, right $arrowdur ease-in-out;
+  	opacity: 0;
+    display: none;
+    &:hover {
+    	fill: $arrowactive;
+    }
+}
+
+#arrow-left {
+  color: $inactive;
+  left: $arrowmargin;
+  transform: translateY(-50%) scaleX(-1);
+  &:hover {
+    color: $active;
+  }
+}
+
+#left-box {
+  position: fixed;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  &:hover {
+    > #arrow-left {
+      opacity: 1;
+      left: $arrowhovermargin;
+      &:hover {
+	    left: $arrowactivemargin;
+      }
+    }
+  }
+}
+
+#arrow-right {
+  color: $inactive;
+  right: $arrowmargin;
+  &:hover {
+    color: $active;
+    right: $arrowactivemargin;
+  }
+}
+
+#right-box {
+  position: fixed;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  &:hover {
+    > #arrow-right {
+      opacity: 1;
+      right: $arrowhovermargin;
+      &:hover {
+	      right: $arrowactivemargin;
+      }
+    }
+  }
+}
+
+@import "mobile.css";

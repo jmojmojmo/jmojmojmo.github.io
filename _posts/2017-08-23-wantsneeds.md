@@ -6,7 +6,7 @@ m-thumbnail: wantsneeds_mobile_hp_332.gif
 col: 1
 order: 1
 ---
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="assets/createjs-2015.11.26.min.js"></script>
 <script src="js/wantsneeds_Canvas.js"></script>
 <script>
 

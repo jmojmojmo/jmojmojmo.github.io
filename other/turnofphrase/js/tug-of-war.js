@@ -28,6 +28,7 @@ $(document).ready(function(){
 		$('#phrase-animate').css("background-image", backgroundImageURL);
 
 		$('#phrasebox').animate({ opacity: 0 }, {duration:2000});
+        
 		$('#phrase-animate').animate({ opacity: 1 }, {duration:2000, complete: function() {
 			$('#phrasebox').css("background-image", backgroundImageURL);
 			$('#phrasebox').css("opacity", 1);

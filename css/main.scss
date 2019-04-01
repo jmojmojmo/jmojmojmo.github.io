@@ -16,6 +16,12 @@ h1, h2, h3, h4, h5, h6, p, span, div {
   font-family: 'Nunito Sans', sans-serif;
 }
 
+// hide things
+
+.hidden {
+  display: none;
+}
+
 // defaults
 
 $background-color: #fff;
@@ -59,6 +65,7 @@ $active: #000;
 $inactive: #999;
 
 #nav {
+  z-index: 1;
   width: 100%;
   a, span {
     @extend .tag; // inherit font from .tag
@@ -227,21 +234,3 @@ $post-margin-top: 150px;
     padding: 0;
   }
 }
-
-#prevnext {
-  color: $inactive;
-  font-size: 40px;
-  font-weight: bold;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  a {
-    color: $inactive; // specificity increase
-    text-decoration: none;
-    &:hover {
-      color: $active;
-      cursor: pointer;
-    }
-  }
-}
-
-@import "mobile.css";

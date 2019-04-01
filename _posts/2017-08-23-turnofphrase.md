@@ -22,10 +22,7 @@ classes: push-right
 		display: inline-block;
 		background-color: #055470;
 	}
-	#phrasebox {
-	}
-	#phrase-animate {
-	}
+	
 	.phrase {
 		background: url(other/turnofphrase/svg/of-1.svg);
 		background-size: contain;
