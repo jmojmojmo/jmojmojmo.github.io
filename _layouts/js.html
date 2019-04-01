@@ -37,8 +37,13 @@
         {% if nextpost.url == null %}
           {% assign nextpost = site.posts | sort:"order" | first %}
         {% endif %}
-        <a href="{{prevpost.url}}" id="arrow-left" class="arrow-button"><img class="svg"  src="css/arrow.svg"></a>
-        <a href="{{nextpost.url}}" id="arrow-right" class="arrow-button"><img class="svg" src="css/arrow.svg"></a>
+        <!-- side arrows -->
+        <div id="left-box">
+          <a href="{{prevpost.url}}" id="arrow-left" class="arrow-button"><img class="svg"  src="css/arrow.svg"></a>
+        </div>
+        <div id="right-box">
+          <a href="{{nextpost.url}}" id="arrow-right" class="arrow-button"><img class="svg" src="css/arrow.svg"></a>
+        </div>
       </div>
     </div>
     <!-- Footer -->
