@@ -59,6 +59,7 @@ $arrowdur: 300ms;
   	-moz-transition: opacity $arrowdur ease-in-out, left $arrowdur ease-in-out, right $arrowdur ease-in-out;
   	transition: opacity $arrowdur ease-in-out, left $arrowdur ease-in-out, right $arrowdur ease-in-out;
   	opacity: 0;
+    display: none;
     &:hover {
     	fill: $arrowactive;
     }

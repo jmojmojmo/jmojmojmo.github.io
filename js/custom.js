@@ -40,6 +40,8 @@ function replaceSvgs() {
 
 function onReady() {
 	replaceSvgs();
+	// show arrows
+	$('.arrow-button').show();
 }
 
 $(document).ready(onReady);
