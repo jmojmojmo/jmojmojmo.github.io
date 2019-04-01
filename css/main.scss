@@ -65,6 +65,7 @@ $active: #000;
 $inactive: #999;
 
 #nav {
+  z-index: 1;
   width: 100%;
   a, span {
     @extend .tag; // inherit font from .tag
